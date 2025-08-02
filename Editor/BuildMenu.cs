@@ -3,6 +3,11 @@ using UnityEditor;
 
 public static class BuildMenu
 {
+    static void SwitchPlatform()
+    {
+        BuildCmd.SwitchPlatform();
+    }
+
     // [MenuItem("BuildHelper/SetBlueprintPath")]
     static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
 
@@ -50,4 +55,5 @@ public static class BuildMenu
 
     // [MenuItem("BuildHelper/Upload CCD")]
     static void UploadCCD() { UnityCCD.ProcessCcd(); }
+    
 }
