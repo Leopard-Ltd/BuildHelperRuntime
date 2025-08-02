@@ -1,52 +1,55 @@
-using UnityEditor;
-
-public static class BuildMenu
+namespace BuildHelper.Workflows
 {
-    [MenuItem("BuildHelper/SetBlueprintPath")]
-    static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
+    using UnityEditor;
 
-    [MenuItem("BuildHelper/Build Android from Editor")]
-    static void BuildAndroidOnEditor() { BuildCmd.BuildAndroidOnEditor(); }
+    public static class BuildMenu
+    {
+        [MenuItem("BuildHelper/SetBlueprintPath")]
+        static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
 
-    [MenuItem("BuildHelper/TryRynSyncData")]
-    static void TryRunSyncData() { BuildCmd.TryRunSyncData(); }
+        [MenuItem("BuildHelper/Build Android from Editor")]
+        static void BuildAndroidOnEditor() { BuildCmd.BuildAndroidOnEditor(); }
 
-    [MenuItem("BuildHelper/Build Android")]
-    static void BuildAndroid() { BuildCmd.BuildAndroid(); }
+        [MenuItem("BuildHelper/TryRynSyncData")]
+        static void TryRunSyncData() { BuildCmd.TryRunSyncData(); }
 
-    [MenuItem("BuildHelper/Build Ios")]
-    static void BuildIos() { BuildCmd.BuildIos(); }
+        [MenuItem("BuildHelper/Build Android")]
+        static void BuildAndroid() { BuildCmd.BuildAndroid(); }
 
-    [MenuItem("BuildHelper/Build WebGl")]
-    static void BuildWebGL() { BuildCmd.BuildWebGL(); }
+        [MenuItem("BuildHelper/Build Ios")]
+        static void BuildIos() { BuildCmd.BuildIos(); }
 
-    [MenuItem("BuildHelper/UploadTestFlight")]
-    static void UploadTestFlight() { BuildCmd.UploadTestFlight(); }
+        [MenuItem("BuildHelper/Build WebGl")]
+        static void BuildWebGL() { BuildCmd.BuildWebGL(); }
 
-    [MenuItem("BuildHelper/UploadAAbToGooglePlay")]
-    static void UploadAAbToGooglePlay() { BuildCmd.UploadAAbToGooglePlay(); }
+        [MenuItem("BuildHelper/UploadTestFlight")]
+        static void UploadTestFlight() { BuildCmd.UploadTestFlight(); }
 
-    [MenuItem("BuildHelper/ProcessBlueprintAndroid")]
-    static void BlueprintWorkFlowAndroid() { BuildCmd.BlueprintWorkFlowAndroid(); }
+        [MenuItem("BuildHelper/UploadAAbToGooglePlay")]
+        static void UploadAAbToGooglePlay() { BuildCmd.UploadAAbToGooglePlay(); }
 
-    [MenuItem("BuildHelper/ProcessBlueprintIos")]
-    static void BlueprintWorkFlowIos() { BuildCmd.BlueprintWorkFlowIos(); }
+        [MenuItem("BuildHelper/ProcessBlueprintAndroid")]
+        static void BlueprintWorkFlowAndroid() { BuildCmd.BlueprintWorkFlowAndroid(); }
 
-    [MenuItem("BuildHelper/ProcessBlueprintWegbl")]
-    static void BlueprintWorkFlowWebGL() { BuildCmd.BlueprintWorkFlowWebgl(); }
+        [MenuItem("BuildHelper/ProcessBlueprintIos")]
+        static void BlueprintWorkFlowIos() { BuildCmd.BlueprintWorkFlowIos(); }
 
-    [MenuItem("BuildHelper/UploadGoogleAndroid")]
-    static void UploadFile() { UploadBuild.UploadGoogleDriveAndroidPlatform(); }
+        [MenuItem("BuildHelper/ProcessBlueprintWegbl")]
+        static void BlueprintWorkFlowWebGL() { BuildCmd.BlueprintWorkFlowWebgl(); }
 
-    [MenuItem("BuildHelper/UploadGoogleIos")]
-    static void UploadFileIos() { UploadBuild.UploadGoogleDriveIosPlatform(); }
+        [MenuItem("BuildHelper/UploadGoogleAndroid")]
+        static void UploadFile() { UploadBuild.UploadGoogleDriveAndroidPlatform(); }
 
-    [MenuItem("BuildHelper/UploadGoogleWebGL")]
-    static void UploadFileWebGL() { UploadBuild.UploadGoogleDriveWebGlPlatForm(); }
+        [MenuItem("BuildHelper/UploadGoogleIos")]
+        static void UploadFileIos() { UploadBuild.UploadGoogleDriveIosPlatform(); }
 
-    [MenuItem("BuildHelper/UploadTelegramWebgl")]
-    static void UploadTelegramWebGL() { UploadBuildTelegram.UploadWebGl(); }
+        [MenuItem("BuildHelper/UploadGoogleWebGL")]
+        static void UploadFileWebGL() { UploadBuild.UploadGoogleDriveWebGlPlatForm(); }
 
-    [MenuItem("BuildHelper/Upload CCD")]
-    static void UploadCCD() { UnityCCD.ProcessCcd(); }
+        [MenuItem("BuildHelper/UploadTelegramWebgl")]
+        static void UploadTelegramWebGL() { UploadBuildTelegram.UploadWebGl(); }
+
+        [MenuItem("BuildHelper/Upload CCD")]
+        static void UploadCCD() { UnityCCD.ProcessCcd(); }
+    }
 }
