@@ -26,7 +26,7 @@ public static class BuildMenu
     }
 
     [MenuItem("BuildScripts/ExportAndroidProject")]
-    static void ExportAndroidProject() { BuildCmd.ExportAndroidProject(); }
+    public static void ExportAndroidProject() { BuildCmd.ExportAndroidProject(); }
 
     [MenuItem("BuildScripts/SetBlueprintPath")]
     public static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
