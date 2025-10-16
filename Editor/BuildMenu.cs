@@ -19,7 +19,7 @@ public static class BuildMenu
         File.WriteAllTextAsync($"{configPath}/DataPath.txt", path);
     }
 
-    static void SwitchPlatform()
+    public static void SwitchPlatform()
     {
         ExportDataPath();
         BuildCmd.SwitchPlatform();
@@ -29,50 +29,50 @@ public static class BuildMenu
     static void ExportAndroidProject() { BuildCmd.ExportAndroidProject(); }
 
     [MenuItem("BuildScripts/SetBlueprintPath")]
-    static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
+    public static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
 
     [MenuItem("BuildScripts/Build Android from Editor")]
-    static void BuildAndroidOnEditor() { BuildCmd.BuildAndroidOnEditor(); }
+    public static void BuildAndroidOnEditor() { BuildCmd.BuildAndroidOnEditor(); }
 
     [MenuItem("BuildScripts/TryRynSyncData")]
-    static void TryRunSyncData() { BuildCmd.TryRunSyncData(); }
+    public static void TryRunSyncData() { BuildCmd.TryRunSyncData(); }
 
     [MenuItem("BuildScripts/Build Android")]
-    static void BuildAndroid() { BuildCmd.BuildAndroid(); }
+    public static void BuildAndroid() { BuildCmd.BuildAndroid(); }
 
     [MenuItem("BuildScripts/Build Ios")]
-    static void BuildIos() { BuildCmd.BuildIos(); }
+    public static void BuildIos() { BuildCmd.BuildIos(); }
 
     [MenuItem("BuildScripts/Build WebGl")]
-    static void BuildWebGL() { BuildCmd.BuildWebGL(); }
+    public static void BuildWebGL() { BuildCmd.BuildWebGL(); }
 
     [MenuItem("BuildScripts/UploadTestFlight")]
-    static void UploadTestFlight() { BuildCmd.UploadTestFlight(); }
+    public static void UploadTestFlight() { BuildCmd.UploadTestFlight(); }
 
     [MenuItem("BuildScripts/UploadAAbToGooglePlay")]
-    static void UploadAAbToGooglePlay() { BuildCmd.UploadAAbToGooglePlay(); }
+    public static void UploadAAbToGooglePlay() { BuildCmd.UploadAAbToGooglePlay(); }
 
     [MenuItem("BuildScripts/ProcessBlueprintAndroid")]
-    static void BlueprintWorkFlowAndroid() { BuildCmd.BlueprintWorkFlowAndroid(); }
+    public static void BlueprintWorkFlowAndroid() { BuildCmd.BlueprintWorkFlowAndroid(); }
 
     [MenuItem("BuildScripts/ProcessBlueprintIos")]
-    static void BlueprintWorkFlowIos() { BuildCmd.BlueprintWorkFlowIos(); }
+    public static void BlueprintWorkFlowIos() { BuildCmd.BlueprintWorkFlowIos(); }
 
     [MenuItem("BuildScripts/ProcessBlueprintWegbl")]
-    static void BlueprintWorkFlowWebGL() { BuildCmd.BlueprintWorkFlowWebgl(); }
+    public static void BlueprintWorkFlowWebGL() { BuildCmd.BlueprintWorkFlowWebgl(); }
 
     [MenuItem("BuildScripts/UploadGoogleAndroid")]
-    static void UploadGoogleDriveAndroidPlatform() { UploadBuild.UploadGoogleDriveAndroidPlatform().GetAwaiter().GetResult(); }
+    public static void UploadGoogleDriveAndroidPlatform() { UploadBuild.UploadGoogleDriveAndroidPlatform().GetAwaiter().GetResult(); }
 
     [MenuItem("BuildScripts/UploadGoogleIos")]
-    static void UploadGoogleDriveIosPlatform() { UploadBuild.UploadGoogleDriveIosPlatform().GetAwaiter().GetResult(); }
+    public static void UploadGoogleDriveIosPlatform() { UploadBuild.UploadGoogleDriveIosPlatform().GetAwaiter().GetResult(); }
 
     [MenuItem("BuildScripts/UploadGoogleWebGL")]
-    static void UploadGoogleDriveWebGlPlatForm() { UploadBuild.UploadGoogleDriveWebGlPlatForm().GetAwaiter().GetResult(); }
+    public static void UploadGoogleDriveWebGlPlatForm() { UploadBuild.UploadGoogleDriveWebGlPlatForm().GetAwaiter().GetResult(); }
 
     [MenuItem("BuildScripts/UploadTelegramWebgl")]
-    static void UploadWebGl() { UploadBuildTelegram.UploadWebGl(); }
+    public static void UploadWebGl() { UploadBuildTelegram.UploadWebGl(); }
 
     [MenuItem("BuildScripts/Upload CCD")]
-    static void ProcessCcd() { UnityCCD.ProcessCcd().GetAwaiter().GetResult(); }
+    public static void ProcessCcd() { UnityCCD.ProcessCcd().GetAwaiter().GetResult(); }
 }
