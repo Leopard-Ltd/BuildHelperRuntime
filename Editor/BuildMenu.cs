@@ -6,7 +6,7 @@ using UnityEngine;
 public static class BuildMenu
 {
     [MenuItem("BuildScripts/Export DataPath", priority = 99)]
-    static void ExportDataPath()
+    public static void ExportDataPath()
     {
         var path = "";
         path += $"{Application.dataPath}\n";
