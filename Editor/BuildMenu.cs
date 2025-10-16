@@ -26,25 +26,25 @@ public static class BuildMenu
     }
 
     [MenuItem("BuildScripts/ExportAndroidProject")]
-    public static void ExportAndroidProject() { _ = BuildCmd.ExportAndroidProject(); }
+    public static void ExportAndroidProject() { BuildCmd.ExportAndroidProject(); }
 
     [MenuItem("BuildScripts/SetBlueprintPath")]
     public static void SetBlueprintDataPath() { BuildCmd.SetBlueprintDataPath(); }
 
     [MenuItem("BuildScripts/Build Android from Editor")]
-    public static void BuildAndroidOnEditor() { _ = BuildCmd.BuildAndroidOnEditor(); }
+    public static void BuildAndroidOnEditor() {  BuildCmd.BuildAndroidOnEditor(); }
 
     [MenuItem("BuildScripts/TryRynSyncData")]
     public static void TryRunSyncData() { BuildCmd.TryRunSyncData(); }
 
     [MenuItem("BuildScripts/Build Android")]
-    public static void BuildAndroid() { _ = BuildCmd.BuildAndroid(); }
+    public static void BuildAndroid() {BuildCmd.BuildAndroid(); }
 
     [MenuItem("BuildScripts/Build Ios")]
-    public static void BuildIos() { _ = BuildCmd.BuildIos(); }
+    public static void BuildIos() { BuildCmd.BuildIos(); }
 
     [MenuItem("BuildScripts/Build WebGl")]
-    public static void BuildWebGL() { _ = BuildCmd.BuildWebGL(); }
+    public static void BuildWebGL() {  BuildCmd.BuildWebGL(); }
 
     [MenuItem("BuildScripts/UploadTestFlight")]
     public static void UploadTestFlight() { BuildCmd.UploadTestFlight(); }
@@ -53,13 +53,13 @@ public static class BuildMenu
     public static void UploadAAbToGooglePlay() { BuildCmd.UploadAAbToGooglePlay(); }
 
     [MenuItem("BuildScripts/ProcessBlueprintAndroid")]
-    public static void BlueprintWorkFlowAndroid() { _ = BuildCmd.BlueprintWorkFlowAndroid(); }
+    public static void BlueprintWorkFlowAndroid() {  BuildCmd.BlueprintWorkFlowAndroid(); }
 
     [MenuItem("BuildScripts/ProcessBlueprintIos")]
-    public static void BlueprintWorkFlowIos() { _ = BuildCmd.BlueprintWorkFlowIos(); }
+    public static void BlueprintWorkFlowIos() {BuildCmd.BlueprintWorkFlowIos(); }
 
     [MenuItem("BuildScripts/ProcessBlueprintWegbl")]
-    public static void BlueprintWorkFlowWebGL() { _ = BuildCmd.BlueprintWorkFlowWebgl(); }
+    public static void BlueprintWorkFlowWebGL() { BuildCmd.BlueprintWorkFlowWebgl(); }
 
     [MenuItem("BuildScripts/UploadGoogleAndroid")]
     public static void UploadGoogleDriveAndroidPlatform() { UploadBuild.UploadGoogleDriveAndroidPlatform().GetAwaiter().GetResult(); }
